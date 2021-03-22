@@ -1,0 +1,15 @@
+{% extends "tcg_cards/base.html" %}
+
+{% block content %}
+
+  <p>Comments</p>
+
+  <ul>
+    {% for comment in comments %}
+      <li>{{ comment }} - {{ comment.owner }}</li>
+    {% endfor %}
+  </ul>
+
+  <a href="{% url 'tcg_comments:new_comment' %}">Add a new comment</a>
+
+{% endblock content %}

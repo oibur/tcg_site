@@ -1,0 +1,1 @@
+web: gunicorn tcg_site.wsgi --log-file -

@@ -1,0 +1,14 @@
+{% extends 'tcg_cards/base.html' %}
+
+{% block content %}
+
+<p><a href="{% url 'tcg_cards:gen1' %}">Generation 1 </a> (1996) - 3527 Cards Between 151 Pokemon</p>
+<p><a href="{% url 'tcg_cards:gen2' %}">Generation 2 </a> (1999) - 1658 Cards Between 100 Pokemon</p>
+<p><a href="{% url 'tcg_cards:gen3' %}">Generation 3 </a> (2002) - 2000 Cards Between 135 Pokemon</p>
+<p><a href="{% url 'tcg_cards:gen4' %}">Generation 4 </a> (2006) - 1252 Cards Between 107 Pokemon</p>
+<p><a href="{% url 'tcg_cards:gen5' %}">Generation 5 </a> (2010) - 1381 Cards Between 156 Pokemon</p>
+<p><a href="{% url 'tcg_cards:gen6' %}">Generation 6 </a> (2013) - 554 Cards Between 72 Pokemon</p>
+<p><a href="{% url 'tcg_cards:gen7' %}">Generation 7 </a> (2016) - 632 Cards Between 88 Pokemon</p>
+<p><a href="{% url 'tcg_cards:gen8' %}">Generation 8 </a> (2019) - 393 Cards Between 89 Pokemon</p>
+<p><a href="{% url 'tcg_cards:totals' %}">TOTAL</a> - 11397 Cards Between 893 Pokemon</p>
+{% endblock content %}
